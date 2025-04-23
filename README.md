@@ -3,6 +3,17 @@
 *A personalized music analyzer and visualization app powered by **Spotify** + **OpenAI**.*  
 Get deep, AI‑generated insights into your top tracks and artists—exploring lyrical, emotional, and psychological dimensions of your listening habits.
 
+<table>
+  <tr>
+    <td><img src="assets/scrc1.png" width="640"/></td>
+  </tr>
+  <tr>
+    <td><img src="assets/scrc2.png" width="640"/></td>
+  </tr>
+</table>
+
+*Your music identity, visualized and analyzed in real‑time!*
+
 ## Features
 
 | Category | What you get |
@@ -16,7 +27,7 @@ Get deep, AI‑generated insights into your top tracks and artists—exploring l
 
 ![App GIF](assets/screen_rec.gif)
 
-*Your music identity, visualized and analyzed in real‑time!*
+*Blitzing through your top tracks and artists in real-time.*
 
 
 ## Usage Walk‑through
