@@ -1,3 +1,11 @@
+"""
+Prompt template for song analysis and psychological insights langchain prompt.
+
+Created by **Inturi, Nikhil Nageshwar**
+
+Licensed under the **MIT License**
+"""
+
 from langchain.prompts import PromptTemplate
 
 music_analysis_prompt = PromptTemplate(

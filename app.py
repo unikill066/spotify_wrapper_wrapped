@@ -1,3 +1,14 @@
+"""
+Spotify Wrapped Unwrapped
+
+A personalized music analyzer and visualization app powered by **Spotify** + **OpenAI**.
+Get deep, AI-generated insights into your top tracks and artists—exploring lyrical, emotional, and psychological dimensions of your listening habits.
+
+Created by **Inturi, Nikhil Nageshwar**
+
+Licensed under the **MIT License**
+"""
+
 # imports
 import os, spotipy, streamlit as st, pandas as pd
 from collections import Counter

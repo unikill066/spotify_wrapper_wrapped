@@ -1,3 +1,11 @@
+"""
+Song Analysis is a class that uses OpenAI's GPT-3.5-turbo model to analyze a user's top songs and artists.
+
+Created by **Inturi, Nikhil Nageshwar**
+
+Licensed under the **MIT License**
+"""
+
 # imports
 import pandas as pd
 from dotenv import load_dotenv
