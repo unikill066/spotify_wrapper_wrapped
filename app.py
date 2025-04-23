@@ -3,8 +3,9 @@ import os, spotipy, streamlit as st, pandas as pd
 from collections import Counter
 from dotenv import load_dotenv
 from spotipy.oauth2 import SpotifyOAuth
-
-load_dotenv()
+# local imports
+from song_analysis import SongAnalyzer
+load_dotenv()  # load environment variables from .env file
 
 SPOTIPY_CLIENT_ID, SPOTIPY_CLIENT_SECRET, SPOTIPY_REDIRECT_URI = os.getenv("SPOTIPY_CLIENT_ID"), os.getenv("SPOTIPY_CLIENT_SECRET"), os.getenv("SPOTIPY_REDIRECT_URI")
 
@@ -77,6 +78,10 @@ genre_counts = Counter(all_genres)
 genre_df = pd.DataFrame(genre_counts.items(), columns=['Genre', 'Count']).sort_values(by="Count", ascending=False)
 
 st.bar_chart(genre_df.set_index('Genre'))
+
+st.subheader("Your Music Taste")
+result = SongAnalyzer().analyze(tracks_df, artists_df)
+st.write(result)
 
 view_option = st.selectbox(
     "Choose what you want to see:",
